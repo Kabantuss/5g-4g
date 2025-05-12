@@ -1,75 +1,64 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5G против 4G</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5G vs 4G</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --background: #0A192F;
-      --primary: #18FFFF;
-      --secondary: #7F00FF;
-      --accent: #00BFFF;
-      --text-main: #E0E0E0;
-      --text-highlight: #FFFFFF;
-    }
-
     body {
       margin: 0;
+      background-color: #0A192F;
+      color: #E0E0E0;
       font-family: 'Open Sans', sans-serif;
-      background-color: var(--background);
-      color: var(--text-main);
     }
     header {
+      background-image: url("james-yarema-G3q7mxXkP-M-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
       text-align: center;
-      padding: 3rem 1rem;
-      background: url('banner-5g.jpg') no-repeat center center/cover;
+      padding: 6rem 2rem;
     }
-    header h1 {
+    h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 3rem;
-      color: var(--primary);
-      text-shadow: 0 0 10px var(--accent);
+      font-size: 3.5rem;
+      color: #18FFFF;
+    }
+    p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 1rem auto;
     }
     nav {
       text-align: center;
       margin-top: 2rem;
     }
     nav a {
-      margin: 0 1rem;
+      margin: 0 15px;
       text-decoration: none;
-      color: var(--accent);
+      color: #7F00FF;
       font-weight: bold;
-      transition: color 0.3s;
     }
-    nav a:hover {
-      color: var(--secondary);
-    }
-    .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      text-align: center;
-    }
-    .content p {
-      font-size: 1.3rem;
+    .sticker {
+      display: block;
+      margin: 3rem auto;
+      width: 300px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Развитие и преимущества сетей 5G</h1>
-  </header>
-  <nav>
-    <a href="advantages.html">Преимущества 5G</a>
-    <a href="development.html">Развитие</a>
-    <a href="everyday.html">5G в быту</a>
-    <a href="industry.html">5G в промышленности</a>
-  </nav>
-  <div class="content">
     <p>Погрузитесь в мир новейших технологий связи: узнайте, чем 5G превосходит 4G, как развивается эта технология и какие возможности она открывает в повседневной жизни и промышленности.</p>
-  </div>
+  </header>
+
+  <nav>
+    <a href="advantages.html">Преимущества</a>
+    <a href="development.html">Развитие</a>
+    <a href="everyday.html">Быт</a>
+    <a href="industry.html">Промышленность</a>
+  </nav>
+
+  <img src="hand-holding-4-5g-stickers.jpg" alt="5G Stickers" class="sticker">
 </body>
 </html>
