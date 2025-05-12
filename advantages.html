@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Преимущества 5G</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #0A192F;
-      color: #E0E0E0;
-      font-family: 'Open Sans', sans-serif;
-      padding: 2rem;
-    }
-    h1 {
-      font-family: 'Montserrat', sans-serif;
-      color: #00BFFF;
-      font-size: 3rem;
-    }
-    h2 {
-      color: #7F00FF;
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1.3rem;
-    }
-    img {
-      display: block;
-      margin: 2rem auto;
-      max-width: 90%;
-    }
+    :root { --bg:#0A192F;--primary:#18FFFF;--secondary:#7F00FF;--accent:#00BFFF;--text:#E0E0E0; }
+    body{margin:0;padding:2rem;font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--text);}
+    h1{text-align:center;color:var(--primary);font-family:'Montserrat';font-size:2.5rem;}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem;}
+    .card{background:#112240;border:1px solid #233554;border-radius:8px;overflow:hidden;transition:transform .3s;}
+    .card:hover{transform:scale(1.05);}    
+    .card img{width:100%;height:180px;object-fit:cover;}
+    .card .content{padding:1rem;}
+    .card h2{margin:0 0 .5rem;color:var(--accent);font-size:1.5rem;}
+    .card p{margin:0;font-size:1.1rem;line-height:1.4;color:var(--text);}
+    .sticker{display:block;margin:2rem auto;width:150px;}
   </style>
 </head>
 <body>
-  <h1>Преимущества 5G по сравнению с 4G</h1>
-  <h2>Скорость передачи данных</h2>
-  <p>5G обеспечивает скорость загрузки до 10 Гбит/с, что в 100 раз быстрее, чем 4G.</p>
-
-  <h2>Задержка (латентность)</h2>
-  <p>Задержка в сетях 5G составляет менее 10 мс, что критично для приложений реального времени, таких как автономные автомобили и удалённые операции.</p>
-
-  <h2>Поддержка устройств</h2>
-  <p>5G способен поддерживать до миллиона устройств на квадратный километр, что в 10 раз больше, чем 4G.</p>
-
-  <img src="pexels-kindelmedia-9799707.jpg" alt="Сравнение 4G и 5G">
+  <h1>Преимущества 5G</h1>
+  <div class="cards">
+    <div class="card">
+      <img src="hand-holding-4-5g-stickers.jpg" alt="Скорость">
+      <div class="content">
+        <h2>Скорость</h2>
+        <p>5G до 10 Гбит/с — в 100 раз быстрее 4G. Молниеносная загрузка файлов и стриминг без лагов.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="pexels-kindelmedia-9799707.jpg" alt="Задержка">
+      <div class="content">
+        <h2>Латентность</h2>
+        <p>Менее 10 мс задержки — критично для автономных систем и онлайн-игр.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="julian-VIrnnqGM8sE-unsplash.jpg" alt="Устройства">
+      <div class="content">
+        <h2>Поддержка устройств</h2>
+        <p>До 1 млн устройств/км² — идеально для IoT и умных городов.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
